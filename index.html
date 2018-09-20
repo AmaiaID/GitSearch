@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>GitTest</title>
+</head>
+
+<body>
+    <div class="gitPage">
+        <div id="mainDiv"class="main">
+            <div id="showSearch" class="search">
+                <div class="searchContainer" id="searchUsers">
+                    <input id="searchInput" type="text" placeholder="Search username">
+                    <button id="searchB"> Search </button>
+                </div>
+            </div>
+            <div id="showProfile" class="profileContainer none">
+                <div id="userPic" class="profPicture"></div>
+                <div id="userDetails"></div>
+            </div>
+            <div id="noRepository" class="none">
+                <p>No repositories available.</p>
+            </div>
+            <div id="showTable" class="none">
+                <table class="table">
+                    <thead id="th"></thead>
+                    <tbody id="tbody">
+                    </tbody>
+                </table>
+            </div>
+            <div id="showError" class="none">
+                <p>Does not exist</p>
+            </div>
+        </div>
+    </div>
+    <script src="git.js"></script>
+</body>
+
+</html>

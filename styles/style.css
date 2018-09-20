@@ -1,0 +1,175 @@
+/*ELEMENTS*/
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  font-family: 'Helvetica', bold;
+  overflow-x: hidden;
+  background-color: #e9e9e9; 
+}
+
+th {
+    text-align: left;
+    padding: 20px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+td {
+    font-weight: bold;
+	font-size: 16px;
+    padding: 20px;
+    border-top: 1px solid #ddd;
+}
+
+button, input {
+    padding: 10px;
+    border-radius: 5px;
+    border-style:solid;
+    border-width:0.5px;
+    border-color:rgba(128,128,128,0.3);
+}
+
+input {
+    width: 70%;
+    outline: none;
+    height: 15px;     
+}
+
+button {
+   background-color:rgba(245,245,245);
+    color:black;
+    font-weight: bold;   
+}
+
+h6, h3 {
+    margin: 0;
+    padding: 3px;
+} 
+
+/*IDs*/
+
+/*STYLE-Error Box, No Repository box*/
+
+#noRepository, #showError {
+    margin-top: 5%;
+    align-items: center;	
+	padding: 10px;
+    font-size: 15px;
+	border-radius: 5px;
+    border-style:solid;
+    border-width:0.5px;
+    border-color:rgba(128,128,128,0.3);    
+}
+
+#noRepository {
+    background-color: rgba(0, 0, 220, 0.2);    
+}
+
+#showError{
+    background-color: rgba(255, 0, 220, 0.2);    
+}
+/*User Details*/
+#userDetails{
+    width:90%;
+}
+
+#showTable{
+    overflow-y: scroll;
+     height:50vh;
+}
+
+/*CLASSES*/ 
+.gitPage {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #e9e9e9;      
+}
+
+.main {
+    background-color: #fff; 
+    padding: 20px;
+    border-radius: 10px;
+    width: 50%;
+    box-shadow: 10px 20px 20px rgba(0, 0, 0, 0.4);
+    max-height: 80%;
+    overflow-y:auto;      
+  }
+    
+/*STYLE- Repository*/
+.table {
+    table-layout: fixed;
+    width: 100%;
+    word-wrap:break-word;
+    overflow-y: scroll;    
+} 
+
+/*Hide the scrollbar in the repository search(only works for chrome, otherwise #parent overflow:hidden)*/ 
+::-webkit-scrollbar { 
+    display: none; 
+}
+
+.statistics {
+    display: flex;
+    flex-direction: row;
+    font-size: 13px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tdStatistics{
+    text-align:right;
+}
+
+.statsIcon {
+    width: 12px;
+    height: 14px;
+}
+
+/*Style- Search Box*/
+.searchContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}  
+
+/*STYLE USER PROFILE*/
+
+/*Image*/
+.profileContainer {
+   /* display: flex;*/
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;    
+}
+
+.profPicture {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    display:flex;
+    align-items:center;
+    justify-content:center;    
+  }
+
+.picture {
+    border-radius: 100%;
+    width: 70px;
+} 
+
+/*Hide divs*/
+.none {
+     display: none;
+}
+
+/* Media Query */
+@media only screen and (max-width: 600px) {
+    .main {
+        width: 75%;
+    }
+}
